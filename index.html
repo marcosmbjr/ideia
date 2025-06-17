@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovação e Longevidade - Início</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/inicio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Inovação e Longevidade</h1>
+            <p>Inclusão Digital para a Melhor Idade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="configuracao.html">Configurações</a></li>
+                <li><a href="apps.html">Aplicativos</a></li>
+                <li><a href="seguranca.html">Segurança</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo ao curso de Inclusão Digital para a Melhor Idade!</h2>
+                <p>Aprenda a usar seu smartphone com confiança e segurança.</p>
+                <button id="participarBtn" class="btn-participar">Quero Participar</button>
+            </div>
+            <div class="hero-image">
+                <img src="img/idosos-tecnologia.jpg" alt="Idosos usando tecnologia">
+            </div>
+        </section>
+
+        <section class="resumo">
+            <h2>O que você vai aprender</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Configurações Básicas</h3>
+                    <p>Aprenda a personalizar seu celular, ajustar o brilho, volume e configurações essenciais.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <h3>Aplicativos Úteis</h3>
+                    <p>Conheça os aplicativos mais populares e como usá-los no seu dia a dia.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Segurança Digital</h3>
+                    <p>Proteja-se contra golpes e aprenda a navegar com segurança na internet.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="turmas">
+            <h2>Horários das Turmas</h2>
+            <div class="tabela-turmas">
+                <table>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                        <th>Vagas</th>
+                    </tr>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>9h às 11h</td>
+                        <td>20 vagas</td>
+                    </tr>
+                    <tr>
+                        <td>Segunda-feira</td>
+                        <td>15h às 17h</td>
+                        <td>20 vagas</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>9h às 11h</td>
+                        <td>20 vagas</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta-feira</td>
+                        <td>15h às 17h</td>
+                        <td>20 vagas</td>
+                    </tr>
+                </table>
+            </div>
+            <p class="duracao">Duração: 6 semanas (1 aula por semana)</p>
+        </section>
+    </main>
+
+    <div id="modalParticipar" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inscreva-se no Curso</h2>
+            <form id="formParticipar">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="celular">Celular:</label>
+                    <input type="tel" id="celular" name="celular" required>
+                </div>
+                <div class="form-group">
+                    <label for="modelo">Modelo do Celular:</label>
+                    <input type="text" id="modelo" name="modelo" required>
+                </div>
+                <div class="form-group">
+                    <label for="turma">Turma Preferencial:</label>
+                    <select id="turma" name="turma" required>
+                        <option value="">Selecione uma turma</option>
+                        <option value="seg-9h">Segunda 9h-11h</option>
+                        <option value="seg-15h">Segunda 15h-17h</option>
+                        <option value="qua-9h">Quarta 9h-11h</option>
+                        <option value="qua-15h">Quarta 15h-17h</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Inscrição</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Projeto Inovação e Longevidade &copy; 2025</p>
+        <p>Parceria: Secretaria da Mulher de Santos, UNISANTA e Parque Tecnológico de Santos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

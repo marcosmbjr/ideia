@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovação e Longevidade - Segurança Digital</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/seguranca.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Inovação e Longevidade</h1>
+            <p>Inclusão Digital para a Melhor Idade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="configuracao.html">Configurações</a></li>
+                <li><a href="apps.html">Aplicativos</a></li>
+                <li><a href="seguranca.html" class="active">Segurança</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-seguranca">
+            <h2>Segurança Digital para Idosos</h2>
+            <p>Aprenda a se proteger online e reconhecer golpes digitais comuns.</p>
+        </section>
+
+        <section class="dicas-seguranca">
+            <h3>Dicas Essenciais de Segurança</h3>
+            <div class="dicas-container">
+                <div class="dica-card">
+                    <div class="dica-icon">🔒</div>
+                    <h4>Senhas Fortes</h4>
+                    <p>Crie senhas com letras, números e símbolos. Não use dados pessoais.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon">🔄</div>
+                    <h4>Atualizações</h4>
+                    <p>Mantenha seu celular e apps sempre atualizados.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon">📧</div>
+                    <h4>E-mails Suspeitos</h4>
+                    <p>Não clique em links ou abra anexos de remetentes desconhecidos.</p>
+                </div>
+                <div class="dica-card">
+                    <div class="dica-icon">💳</div>
+                    <h4>Dados Financeiros</h4>
+                    <p>Nunca compartilhe dados bancários por telefone ou mensagem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="golpes-comuns">
+            <h3>Golpes Digitais Comuns</h3>
+            <div class="golpes-container">
+                <div  class="golpe-item" onclick="toggleContent(this)" data-golpe="tecnico">
+                    <div class="golpe-header">
+                        <h4>Falso Suporte Técnico</h4>
+                        <span class="golpe-toggle">+</span>
+                    </div>
+                    <div class="golpe-content">
+                        <p><strong>Como funciona:</strong> Ligam dizendo que seu computador ou celular está com vírus e oferecem "conserto" remoto.</p>
+                        <p><strong>O que fazer:</strong> Desligue. Empresas sérias não ligam oferecendo serviços.</p>
+                    </div>
+                </div>
+
+                <div  class="golpe-item" onclick="toggleContent(this)" data-golpe="parente">
+                    <div class="golpe-header">
+                        <h4>Falso Parente em Apuros</h4>
+                        <span class="golpe-toggle">+</span>
+                    </div>
+                    <div class="golpe-content">
+                        <p><strong>Como funciona:</strong> Ligam dizendo ser um familiar precisando de dinheiro urgente.</p>
+                        <p><strong>O que fazer:</strong> Verifique com outros familiares antes de qualquer ação.</p>
+                    </div>
+                </div>
+
+                <div  class="golpe-item" onclick="toggleContent(this)" data-golpe="premio">
+                    <div class="golpe-header">
+                        <h4>Prêmios e Heranças</h4>
+                        <span class="golpe-toggle">+</span>
+                    </div>
+                    <div class="golpe-content">
+                        <p><strong>Como funciona:</strong> Dizem que você ganhou um prêmio ou herança, mas precisa pagar taxas para receber.</p>
+                        <p><strong>O que fazer:</strong> Desconfie de ofertas boas demais. Prêmios reais não cobram taxas antecipadas.</p>
+                    </div>
+                </div>
+
+                <div class="golpe-item" onclick="expandirGolpe(this)" data-golpe="banco">
+                    <div class="golpe-header">
+                        <h4>Falsos Funcionários de Bancos</h4>
+                        <span class="golpe-toggle">+</span>
+                    </div>
+                    <div class="golpe-content">
+                        <p><strong>Como funciona:</strong> Ligam se passando por bancos pedindo dados ou transferências.</p>
+                        <p><strong>O que fazer:</strong> Bancos nunca pedem senhas ou transferências por telefone.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="protecao-celular">
+            <h3>Protegendo Seu Celular</h3>
+            <div class="protecao-passos">
+                <div class="protecao-passo">
+                    <div class="passo-numero">1</div>
+                    <p>Ative a <strong>verificação em duas etapas</strong> em apps importantes</p>
+                </div>
+                <div class="protecao-passo">
+                    <div class="passo-numero">2</div>
+                    <p>Use <strong>senha ou biometria</strong> para desbloquear o celular</p>
+                </div>
+                <div class="protecao-passo">
+                    <div class="passo-numero">3</div>
+                    <p>Baixe apps apenas das lojas oficiais (Play Store ou App Store)</p>
+                </div>
+                <div class="protecao-passo">
+                    <div class="passo-numero">4</div>
+                    <p>Desative conexões como <strong>Bluetooth</strong> quando não estiver usando</p>
+                </div>
+                <div class="protecao-passo">
+                    <div class="passo-numero">5</div>
+                    <p>Cuidado com redes Wi-Fi públicas - evite acessar bancos nelas</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="recursos-uteis">
+            <h3>Recursos Úteis</h3>
+            <div class="recursos-links">
+                <a href="#" class="recurso-link">Cartilha de Segurança Digital para Idosos</a>
+                <a href="#" class="recurso-link">Canal de Denúncias de Golpes</a>
+                <a href="#" class="recurso-link">Vídeos Educativos sobre Segurança</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Inovação e Longevidade &copy; 2025</p>
+        <p>Parceria: Secretaria da Mulher de Santos, UNISANTA e Parque Tecnológico de Santos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

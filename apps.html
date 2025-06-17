@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovação e Longevidade - Aplicativos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/apps.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Inovação e Longevidade</h1>
+            <p>Inclusão Digital para a Melhor Idade</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="configuracao.html">Configurações</a></li>
+                <li><a href="apps.html" class="active">Aplicativos</a></li>
+                <li><a href="seguranca.html">Segurança</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-apps">
+            <h2>Aplicativos Populares e Úteis</h2>
+            <p>Conheça os aplicativos mais usados e como eles podem facilitar seu dia a dia.</p>
+        </section>
+
+        <div class="categorias">
+            <button class="categoria-btn active" onclick="filtrarApps('todos')">Todos</button>
+            <button class="categoria-btn" onclick="filtrarApps('comunicacao')">Comunicação</button>
+            <button class="categoria-btn" onclick="filtrarApps('social')">Redes Sociais</button>
+            <button class="categoria-btn" onclick="filtrarApps('utilidades')">Utilidades</button>
+            <button class="categoria-btn" onclick="filtrarApps('entretenimento')">Entretenimento</button>
+            <button class="categoria-btn" onclick="filtrarApps('saude')">Saúde</button>
+        </div>
+
+        <section class="apps-container">
+            <div class="app-card" data-categoria="comunicacao">
+                <div class="app-icon">📞</div>
+                <h3>WhatsApp</h3>
+                <p>Mensagens, chamadas e vídeo chamadas gratuitas.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('whatsapp')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="social">
+                <div class="app-icon">📷</div>
+                <h3>Instagram</h3>
+                <p>Compartilhe fotos e vídeos com amigos e familiares.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('instagram')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="comunicacao">
+                <div class="app-icon">📹</div>
+                <h3>Zoom</h3>
+                <p>Faça reuniões e encontros virtuais com vídeo.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('zoom')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="utilidades">
+                <div class="app-icon">🗺️</div>
+                <h3>Google Maps</h3>
+                <p>Navegação por GPS e localização de lugares.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('maps')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="entretenimento">
+                <div class="app-icon">🎵</div>
+                <h3>Spotify</h3>
+                <p>Ouça músicas e podcasts favoritos.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('spotify')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="saude">
+                <div class="app-icon">❤️</div>
+                <h3>Coronavírus SUS</h3>
+                <p>Informações oficiais sobre saúde e vacinação.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('sus')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="utilidades">
+                <div class="app-icon">📱</div>
+                <h3>Banco Digital</h3>
+                <p>Faça transações bancárias pelo celular.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('banco')">Saiba Mais</button>
+            </div>
+
+            <div class="app-card" data-categoria="entretenimento">
+                <div class="app-icon">🎬</div>
+                <h3>YouTube</h3>
+                <p>Assista a vídeos sobre diversos assuntos.</p>
+                <button class="btn-saiba-mais" onclick="mostrarDetalhes('youtube')">Saiba Mais</button>
+            </div>
+        </section>
+
+        <div id="appModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModal()">&times;</span>
+                <div id="appModalContent">
+                    <!-- Conteúdo dinâmico será inserido aqui -->
+                </div>
+            </div>
+        </div>
+
+        <section class="instalacao-apps">
+            <h3>Como Instalar Aplicativos</h3>
+            <div class="passos-instalacao">
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <p>Abra a <strong>Play Store</strong> (Android) ou <strong>App Store</strong> (iPhone)</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <p>Toque na barra de busca e digite o nome do app</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <p>Selecione o aplicativo correto na lista</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">4</div>
+                    <p>Toque em <strong>Instalar</strong> ou <strong>Obter</strong></p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">5</div>
+                    <p>Espere o download e instalação concluírem</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">6</div>
+                    <p>Toque em <strong>Abrir</strong> para começar a usar</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto Inovação e Longevidade &copy; 2025</p>
+        <p>Parceria: Secretaria da Mulher de Santos, UNISANTA e Parque Tecnológico de Santos</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

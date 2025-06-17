@@ -1,0 +1,116 @@
+/* Estilos específicos para a página de configurações */
+.intro-config {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s;
+}
+
+.intro-config h2 {
+    color: #6e48aa;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.intro-config p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.config-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.config-item {
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    animation: fadeInUp 0.5s;
+}
+
+.config-header {
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    transition: background-color 0.3s;
+}
+
+.config-header:hover {
+    background-color: #eee;
+}
+
+.config-header h3 {
+    color: #6e48aa;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.toggle-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6e48aa;
+}
+
+.config-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 1.5rem;
+}
+
+.config-content ol, .config-content ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.config-content li {
+    margin-bottom: 0.5rem;
+}
+
+.video-tutorial {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.video-tutorial h3 {
+    color: #6e48aa;
+    margin-bottom: 1rem;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
