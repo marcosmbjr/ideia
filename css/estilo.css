@@ -88,12 +88,12 @@ footer p {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;  
 }
 
 .modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 5% auto;
     padding: 2rem;
     border-radius: 8px;
     width: 90%;
@@ -116,6 +116,10 @@ footer p {
 .close:hover {
     color: #333;
 }
+
+
+
+
 
 .form-group {
     margin-bottom: 1rem;
