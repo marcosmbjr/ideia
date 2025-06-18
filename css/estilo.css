@@ -93,7 +93,7 @@ footer p {
 
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto;
+    margin: 4% auto;
     padding: 2rem;
     border-radius: 8px;
     width: 90%;
@@ -116,9 +116,6 @@ footer p {
 .close:hover {
     color: #333;
 }
-
-
-
 
 
 .form-group {
@@ -182,6 +179,7 @@ footer p {
     }
     
     nav ul {
+         display: none;
         margin-top: 1rem;
         justify-content: center;
     }
@@ -191,13 +189,23 @@ footer p {
     }
     
     .modal-content {
-        margin: 20% auto;
+        margin: 4% auto;
         width: 95%;
+    }
+
+     .menu-btn {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+    }
+    
+    nav.active ul {
+        display: flex;
     }
 }
 
-
-/* Adicione isso ao final do arquivo estilo.css */
 
 /* Menu Hamburguer */
 .menu-btn {
@@ -248,13 +256,37 @@ nav.active ul li{
     transform: rotate(-45deg) translate(7px, -6px);
 }
 
+
+
+/* Responsividade */
 @media (max-width: 768px) {
-    .menu-btn {
-        display: block;
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
     }
     
     nav ul {
-        display: none;
+         display: none;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+     nav.active ul {
+        display: flex;
+    }
+    
+    .modal-content {
+        margin: 4% auto;
+        width: 95%;
+    }
+
+     .menu-btn {
+        display: block;
     }
     
     nav.active ul {
