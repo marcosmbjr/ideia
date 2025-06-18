@@ -67,7 +67,7 @@ const appDetails = {
             "Use o modo avião quando não quiser ser incomodado",
             "Ative a verificação em duas etapas em Configurações > Conta > Verificação em duas etapas para mais segurança"
         ],
-        download: "https://www.whatsapp.com/download"
+        download: "#"
     },
     instagram: {
         title: "Instagram",
@@ -84,7 +84,7 @@ const appDetails = {
             "Use o Direct (ícone de avião de papel) para enviar mensagens privadas",
             "Explore conteúdos do seu interesse na aba 'Explorar' (ícone de lupa)"
         ],
-        download: "https://www.instagram.com/download"
+        download: "#"
     },
     zoom: {
         title: "Zoom",
@@ -101,7 +101,7 @@ const appDetails = {
             "Compartilhe sua tela para mostrar fotos ou apresentações",
             "Use o chat durante a chamada para enviar mensagens sem interromper"
         ],
-        download: "https://zoom.us/download"
+        download: "#"
     },
     maps: {
         title: "Google Maps",
@@ -118,7 +118,7 @@ const appDetails = {
             "Verifique horários de funcionamento antes de visitar um local",
             "Use a visualização de satélite para ver fotos reais do local"
         ],
-        download: "https://www.google.com/maps/about/maps/"
+        download: "#"
     },
     spotify: {
         title: "Spotify",
@@ -135,7 +135,7 @@ const appDetails = {
             "Baixe músicas para ouvir offline (requer assinatura Premium)",
             "Conecte-se a alto-falantes inteligentes para ouvir em casa"
         ],
-        download: "https://www.spotify.com/download"
+        download: "#"
     },
     sus: {
         title: "Coronavírus SUS",
@@ -152,7 +152,7 @@ const appDetails = {
             "Use o aplicativo para acompanhar resultados de exames",
             "Verifique filas de espera para consultas especializadas"
         ],
-        download: "https://www.gov.br/pt-br/apps/coronavirus-sus"
+        download: "#"
     },
     banco: {
         title: "Banco Digital",
@@ -186,7 +186,7 @@ const appDetails = {
             "Ative legendas automáticas para entender melhor o conteúdo",
             "Use o modo restrito para filtrar conteúdo inadequado"
         ],
-        download: "https://www.youtube.com/"
+        download: "#"
     }
 };
 
