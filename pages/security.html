@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inovação e Longevidade - Segurança Digital</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/seguranca.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/security.css">
+    <script src="../js/script.js" defer></script>
+    <script src="../js/security.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,11 +17,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="configuracao.html">Configurações</a></li>
-                <li><a href="apps.html">Aplicativos</a></li>
-                <li><a href="seguranca.html" class="active">Segurança</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./config.html">Configurações</a></li>
+                <li><a href="./apps.html">Aplicativos</a></li>
+                <li><a href="./security.html" class="active">Segurança</a></li>
+                <li><a href="./about.html">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -92,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="golpe-item" onclick="expandirGolpe(this)" data-golpe="banco">
+                <div class="golpe-item" onclick="toggleContent(this)" data-golpe="banco">
                     <div class="golpe-header">
                         <h4>Falsos Funcionários de Bancos</h4>
                         <span class="golpe-toggle">+</span>
@@ -146,6 +148,6 @@
         <p>Parceria: Secretaria da Mulher de Santos, UNISANTA e Parque Tecnológico de Santos</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    
 </body>
 </html>
