@@ -104,6 +104,7 @@ footer p {
     position: relative;
     max-height: 90vh;
     overflow-y: auto;
+    margin: 0 auto;
 }
 
 .close {
