@@ -1,26 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Galeria de fotos simples
-    const galeria = document.querySelector('.fotos-container');
-    if (galeria) {
-        galeria.addEventListener('click', function(e) {
-            if (e.target.tagName === 'IMG') {
-                // Simular lightbox
-                const lightbox = document.createElement('div');
-                lightbox.className = 'lightbox';
-                lightbox.innerHTML = `
-                    <span class="close-lightbox">&times;</span>
-                    <img src="${e.target.src}" alt="${e.target.alt}">
-                `;
-                
-                document.body.appendChild(lightbox);
-                
-                // Fechar lightbox
-                lightbox.querySelector('.close-lightbox').addEventListener('click', () => {
-                    lightbox.remove();
-                });
-            }
+    // Galeria de fotos com lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeLightbox = document.querySelector('.close-lightbox');
+    
+    const galleryItems = document.querySelectorAll('.foto-item img');
+    
+    galleryItems.forEach(img => {
+        img.addEventListener('click', function() {
+            lightboxImg.src = this.src;
+            lightboxCaption.textContent = this.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Previne scroll do body
         });
-    }
+    });
+    
+    // Fechar lightbox
+    closeLightbox.addEventListener('click', function() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = 'auto'; // Restaura scroll do body
+    });
+    
+    // Fechar ao clicar fora da imagem
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
     
     // Formulário de contato
     const formContato = document.querySelector('.contato-form form');

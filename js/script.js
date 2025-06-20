@@ -46,3 +46,34 @@ document.addEventListener('click', function(event) {
         }
     });
 });
+
+
+// Funções gerais para manipulação do DOM
+document.addEventListener('DOMContentLoaded', function() {
+    // Ativar menu ativo baseado na URL
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('nav ul li a');
+    
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
+        }
+    });
+    
+    // Fechar modais ao pressionar ESC
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            fecharModal();
+        }
+    });
+});
+
+// Função para fechar modal
+function fecharModal() {
+    document.querySelectorAll('.modal').forEach(modal => {
+        modal.style.display = 'none';
+    });
+}

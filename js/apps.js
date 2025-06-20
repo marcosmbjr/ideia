@@ -15,7 +15,8 @@ const appDetails = {
             "Use o modo avião quando não quiser ser incomodado",
             "Ative a verificação em duas etapas em Configurações > Conta > Verificação em duas etapas para mais segurança"
         ],
-        download: "#"
+        download: "#",
+        website: "https://www.whatsapp.com/"
     },
     instagram: {
         title: "Instagram",
@@ -32,7 +33,8 @@ const appDetails = {
             "Use o Direct (ícone de avião de papel) para enviar mensagens privadas",
             "Explore conteúdos do seu interesse na aba 'Explorar' (ícone de lupa)"
         ],
-        download: "#"
+        download: "#",
+        website: "https://www.instagram.com/"
     },
     zoom: {
         title: "Zoom",
@@ -49,7 +51,8 @@ const appDetails = {
             "Compartilhe sua tela para mostrar fotos ou apresentações",
             "Use o chat durante a chamada para enviar mensagens sem interromper"
         ],
-        download: "#"
+        download: "#",
+        website: "https://zoom.us/"
     },
     maps: {
         title: "Google Maps",
@@ -66,7 +69,8 @@ const appDetails = {
             "Verifique horários de funcionamento antes de visitar um local",
             "Use a visualização de satélite para ver fotos reais do local"
         ],
-        download: "#"
+        download: "#",
+        website: "https://www.google.com/maps"
     },
     spotify: {
         title: "Spotify",
@@ -83,7 +87,8 @@ const appDetails = {
             "Baixe músicas para ouvir offline (requer assinatura Premium)",
             "Conecte-se a alto-falantes inteligentes para ouvir em casa"
         ],
-        download: "#"
+        download: "#",
+        website: "https://www.spotify.com/"
     },
     sus: {
         title: "Coronavírus SUS",
@@ -100,7 +105,8 @@ const appDetails = {
             "Use o aplicativo para acompanhar resultados de exames",
             "Verifique filas de espera para consultas especializadas"
         ],
-        download: "#"
+        download: "#",
+        website: "https://www.gov.br/saude/"
     },
     banco: {
         title: "Banco Digital",
@@ -117,7 +123,8 @@ const appDetails = {
             "Use redes seguras (evite Wi-Fi público) para transações",
             "Configure notificações para todas as movimentações"
         ],
-        download: "#"
+        download: "#",
+        website: "#"
     },
     youtube: {
         title: "YouTube",
@@ -134,7 +141,8 @@ const appDetails = {
             "Ative legendas automáticas para entender melhor o conteúdo",
             "Use o modo restrito para filtrar conteúdo inadequado"
         ],
-        download: "#"
+        download: "#",
+        website: "https://www.youtube.com/"
     }
 };
 
@@ -171,8 +179,14 @@ function mostrarDetalhes(app) {
         description: "Informações detalhadas sobre este aplicativo.",
         steps: ["Passo 1", "Passo 2"],
         tips: ["Dica 1", "Dica 2"],
-        download: "#"
+        download: "#",
+        website: "#"
     };
+    
+    // Verificar se é mobile
+    const isMobile = window.innerWidth < 768;
+    const buttonText = isMobile ? "Baixar App" : "Visitar Site";
+    const buttonLink = isMobile ? detalhes.download : detalhes.website;
     
     modalContent.innerHTML = `
         <div class="app-detalhes">
@@ -195,7 +209,7 @@ function mostrarDetalhes(app) {
             </div>
             ` : ''}
             
-            <a href="${detalhes.download}" target="_blank" class="btn-download">Baixar ${detalhes.title}</a>
+            <a href="${buttonLink}" target="_blank" class="btn-download">${buttonText}</a>
         </div>
     `;
     

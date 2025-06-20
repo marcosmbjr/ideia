@@ -137,6 +137,7 @@
     text-decoration: none;
     margin-top: 1rem;
     transition: background-color 0.3s;
+    text-align: center;
 }
 
 .btn-download:hover {
@@ -221,22 +222,6 @@
 
 .app-passos li, .app-dicas li {
     margin-bottom: 0.8rem;
-}
-
-.btn-download {
-    display: inline-block;
-    background-color: #6e48aa;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 1rem;
-    transition: background-color 0.3s;
-    text-align: center;
-}
-
-.btn-download:hover {
-    background-color: #9d50bb;
 }
 
 @keyframes fadeInUp {
