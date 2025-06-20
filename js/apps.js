@@ -222,7 +222,8 @@ function filtrarApps(categoria) {
     const botoes = document.querySelectorAll('.categoria-btn');
     
     botoes.forEach(btn => {
-        btn.classList.toggle('active', btn.textContent.toLowerCase().includes(categoria));
+        const btnCategory = btn.getAttribute('data-category') || 'todos';
+        btn.classList.toggle('active', btnCategory === categoria);
     });
     
     apps.forEach(app => {

@@ -12,8 +12,11 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Inovação e Longevidade</h1>
-            <p>Inclusão Digital para a Melhor Idade</p>
+            <img src="../img/logo2.jpg" alt="">
+            <div id="title-slogan">
+                <h1 id="title">Inovação e Longevidade</h1>
+                <p id="slogan">Inovação que aproxima, conhecimento que liberta!</p>
+            </div>
         </div>
         <nav>
             <ul>
@@ -33,12 +36,12 @@
         </section>
 
         <div class="categorias">
-            <button class="categoria-btn active" onclick="filtrarApps('todos')">Todos</button>
-            <button class="categoria-btn" onclick="filtrarApps('comunicacao')">Comunicação</button>
-            <button class="categoria-btn" onclick="filtrarApps('social')">Redes Sociais</button>
-            <button class="categoria-btn" onclick="filtrarApps('utilidades')">Utilidades</button>
-            <button class="categoria-btn" onclick="filtrarApps('entretenimento')">Entretenimento</button>
-            <button class="categoria-btn" onclick="filtrarApps('saude')">Saúde</button>
+            <button class="categoria-btn active" data-category="todos" onclick="filtrarApps('todos')">Todos</button>
+            <button class="categoria-btn" data-category="comunicacao" onclick="filtrarApps('comunicacao')">Comunicação</button>
+            <button class="categoria-btn" data-category="social" onclick="filtrarApps('social')">Redes Sociais</button>
+            <button class="categoria-btn" data-category="utilidades" onclick="filtrarApps('utilidades')">Utilidades</button>
+            <button class="categoria-btn" data-category="entretenimento" onclick="filtrarApps('entretenimento')">Entretenimento</button>
+            <button class="categoria-btn" data-category="saude" onclick="filtrarApps('saude')">Saúde</button>
         </div>
 
         <section class="apps-container">

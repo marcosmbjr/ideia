@@ -13,23 +13,43 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #6e48aa, #9d50bb);
+    background: linear-gradient(135deg, #6b28d6, #b062cf);
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.3rem 3rem 0.3rem 0rem;
+    /* padding-right: 45rem;   teste centralizado (atualização futura para implementação de api de login) */
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.2rem;
+#logo-mobile {
+    display: none;
 }
 
-.logo p {
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 6vw;
+    height: 7vh;
+}
+
+#title {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+#slogan {
     font-size: 0.9rem;
     opacity: 0.9;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul {
@@ -237,14 +257,25 @@ nav.active ul li {
 /* Responsividade */
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
-        padding: 1rem;
+        /* padding: 1rem; */
     }
+
+  #logo-mobile {
+    display: block;
+    width: 50vw;
+    height: 12vh;
+  }
+  
+    .logo h1, p, #logo-desktop {
+        display: none;
+    }
+   
 
     nav ul {
         display: none;
-        margin-top: 1rem;
+        margin-top:-0.1rem;
         justify-content: center;
     }
 
