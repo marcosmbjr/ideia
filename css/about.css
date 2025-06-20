@@ -31,13 +31,20 @@
 .historia-imagem {
     flex: 1;
     text-align: center;
+    width: 100%;
+    height: auto;
+
 }
 
 .historia-imagem img {
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: -5%;
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
+
+
 
 .parceiros {
     display: flex;
