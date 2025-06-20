@@ -226,7 +226,7 @@ nav.active ul {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 120px;
+    top: 15vh;
     left: 0;
     width: 100%;
     background-color: #6e48aa;
@@ -275,7 +275,7 @@ nav.active ul li {
 
     nav ul {
         display: none;
-        margin-top:-0.1rem;
+        margin-top:-1.5rem;
         justify-content: center;
     }
 
