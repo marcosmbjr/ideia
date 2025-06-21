@@ -267,7 +267,7 @@ nav.active ul li {
     height: 12vh;
   }
   
-    .logo h1, p, #logo-desktop {
+    .logo h1, #slogan, #logo-desktop {
         display: none;
     }
    
