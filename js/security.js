@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (golpesContent[golpeId]) {
             const golpe = golpesContent[golpeId];
             content.innerHTML = `
-                <p><strong>Como funciona:</strong> ${golpe.descricao}</p>
+                <p><b>Como funciona:</b> ${golpe.descricao}</p>
                 <div class="golpe-section">
                     <h5>Como se proteger:</h5>
                     <ul>
