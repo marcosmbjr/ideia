@@ -16,7 +16,6 @@ header {
     background: linear-gradient(135deg, #6b28d6, #b062cf);
     color: white;
     padding: 0.3rem 3rem 0.3rem 0rem;
-    /* padding-right: 45rem;   teste centralizado (atualização futura para implementação de api de login) */
     display: flex;
     justify-content: space-between;
     align-items: center;

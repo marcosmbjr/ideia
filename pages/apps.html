@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inovação e Longevidade - Aplicativos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/apps.css">
-    <script src="../js/script.js"defer></script>
+    <script src="../js/script.js" defer></script>
     <script src="../js/apps.js" defer></script>
 </head>
+
 <body>
-    <header>
+   <header>
         <div class="logo">
-            <img src="../img/logo2.jpg" alt="">
+            <img id="logo-mobile" src="../img/logo3.png" alt="">
+            <img id="logo-desktop" src="../img/logo2.jpg" alt="">
             <div id="title-slogan">
                 <h1 id="title">Inovação e Longevidade</h1>
                 <p id="slogan">Inovação que aproxima, conhecimento que liberta!</p>
@@ -20,7 +23,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Início</a></li>
+                <li><a href="../index.html" >Início</a></li>
                 <li><a href="./config.html">Configurações</a></li>
                 <li><a href="./apps.html" class="active">Aplicativos</a></li>
                 <li><a href="./security.html">Segurança</a></li>
@@ -37,10 +40,13 @@
 
         <div class="categorias">
             <button class="categoria-btn active" data-category="todos" onclick="filtrarApps('todos')">Todos</button>
-            <button class="categoria-btn" data-category="comunicacao" onclick="filtrarApps('comunicacao')">Comunicação</button>
+            <button class="categoria-btn" data-category="comunicacao"
+                onclick="filtrarApps('comunicacao')">Comunicação</button>
             <button class="categoria-btn" data-category="social" onclick="filtrarApps('social')">Redes Sociais</button>
-            <button class="categoria-btn" data-category="utilidades" onclick="filtrarApps('utilidades')">Utilidades</button>
-            <button class="categoria-btn" data-category="entretenimento" onclick="filtrarApps('entretenimento')">Entretenimento</button>
+            <button class="categoria-btn" data-category="utilidades"
+                onclick="filtrarApps('utilidades')">Utilidades</button>
+            <button class="categoria-btn" data-category="entretenimento"
+                onclick="filtrarApps('entretenimento')">Entretenimento</button>
             <button class="categoria-btn" data-category="saude" onclick="filtrarApps('saude')">Saúde</button>
         </div>
 
@@ -147,6 +153,7 @@
         <p>Parceria: Secretaria da Mulher de Santos, UNISANTA e Parque Tecnológico de Santos</p>
     </footer>
 
-    
+
 </body>
+
 </html>
